@@ -1,0 +1,286 @@
+1. mean median mode
+   data 12,15,12,14,16,14,14,18,20,18
+A. mean=12+15+12+14+16+14+14+18+20+18/10        mean=xi/n
+   153/10=15.3                             
+   
+   median=12,12,14,14,14,15,16,18,18,20  even     median=n/2
+                       |  |
+   median=(14+15)/2  
+   median=29/2
+   median=14.5
+
+   mode 4
+
+
+2. calculated weighted mean
+   values=10,20,30,40
+   weight=1,2,3,4
+
+A. W.M=10*1+20*2+30*3+40*4/1+2+3+4             sum of products and its weight/sum of weight 
+      =300/10
+      =30
+
+
+3. Mean of Grouped Data
+   calculate mean 
+   class interval:10-20,20-30,30-40,40-50
+   frequencies:5,10,15,20
+A. midpoint =10+15/2=15
+            =20+30/2=25
+            =30+40/2=35
+            =40+50/2=45
+   class interval=10-20:5*15=75
+                 =20-30:10*25=250
+                 =30-40:15*35=525
+                 =40-50:20*45=900
+
+     sum of products=70+250+525+900=1750
+
+     sum of frequencies=5+10+15+20=50
+
+    mean=sum of prduct/sum of frequency
+        =1750/50
+        =35
+       
+4.variance and std deviation
+  data:4,8,6,5,3,7,9
+A. mean=4+8+6+5+3+7+9/7
+   mean=42/7=6
+
+  variance= row^2=(xi-x)^2/7
+   
+   4    -2    4
+   8     2    4 
+   6     0    0
+   5    -1    1         ==28/7=4
+   3    -3    9
+   7     1    1
+   9     3    9
+
+   std deviation=sqrt(variance)
+                =2
+
+
+5.find range & interquartile Range  
+   8,10,15,20,25,30,35,40
+A. Range=max-min
+        =40-8
+        =32
+
+median=(20+25)/2=45/2=22.5
+
+
+Q1 is median of lower half=8,10,15,20
+Q1=(10+15)/2
+  =25/2
+  =12.5
+
+Q3 is median of upper half=25,30,35,40
+Q3=(30+35)/2
+  =65/2
+  =32.5
+IQR=Q3-Q1
+   =32.5-12.5
+   =20
+
+6.variance and std deviation 
+class interval:0-10,10-20,20-30,30-40
+frequency:4,6,8,2
+A. midpoint 0-10=0+10/2=5
+            10-20=10+20/2=15
+            20-30=20+30/2=25
+            30-40=30+40/2=35
+                       
+                          
+class interval 0-10:5*4=20
+               10-20:15*6=90
+               20-30:25*8=200
+               30-40:35*2=70
+                         -----
+                          380
+sum of product=20+90+200+70=380
+ 
+sum of frequency=4+6+8+2=20
+
+mean=380/20=19
+  
+   class interval 0-10:(5-19)^2*4 = 14^2*4=196*4=784
+   class interval 10-20:(15-19)^2*6 =4^2*6=16*6=96
+   class interval 20-30:(25-19)^2*8 =6^2*8=36*8=288
+   class interval 30-40:(35-19)^2*2 =16^2*2=256*2=512
+
+              784+96+288+512=1680 
+
+variance= sum of squared deviation/total frequency
+        =1680/20
+        =84
+
+
+standard deviation=sqrt(variance)
+                  =sqrt(84)
+                  =9.17
+
+7.coefficient of variation
+mean=25 and std deviation=5
+A.   coefficient of variation=(S.D/Mean)*100
+                             =(5/25)*100
+                             =0.2*100
+                             =20%
+
+
+8. Compare dispersion of two data sets using S.D
+   set 1: 10,12,14,16,18
+   set 2: 20,22,24,26,28
+
+A. For set 1: 10,12,14,16,18
+mean=(10+12+14+16+18)/5
+    = 70/5
+    =14
+              deviation mean     Squared deviation
+              =(10-14)=-4         =-4^2=16
+              =(12-14)=-2         =-2^2= 4
+              =(14-14)= 0         = 0^2= 0
+              =(16-14)= 2         = 2^2= 4
+              =(18-14)= 4         = 4^2=16
+
+
+
+
+Variance=(16+4+0+4+16)/5
+        =40/5
+        =8
+S.D=SQRT(variance)
+   =SQRT(8)
+   =2.8
+
+B.
+For set 2: 20,22,24,26,28
+mean=(20+22+24+26+28)/5
+    =( 120)/5
+    =24
+              deviation mean     Squared deviation
+              =(20-24)=-4         =-4^2=16
+              =(22-24)=-2         =-2^2= 4
+              =(24-24)= 0         = 0^2= 0
+              =(26-24)= 2         = 2^2= 4
+              =(28-24)= 4         = 4^2=16
+
+Variance=(16+4+0+4+16)/5
+        =40/5
+        =8
+S.D=SQRT(variance)
+   =SQRT(8)
+   =2.8
+both have same S.D ,it shows both have equal level of dispersion and variability.
+
+9.Outliers and Box Plot?
+ Identify outliers using IQR method and prepare box plot
+Data:5,7,8,10,15,20,30,50
+A. 5,7,8,10,15,20,30,50
+
+ lower half: 5,7,8,10
+ Q1=(7+8)/2=7.5
+ Q1=7.5
+ 
+ Q2=(10+15)/2=12.5
+
+ Upper half: 15,20,30,50
+ Q3=(20+30)/2
+ Q3=25
+
+IQR=Q3-Q1=25-7.5
+IQR=17.5
+
+Outliers using IQR
+
+lower bound=Q1-1.5*IQR
+           =7.5-1.5*17.5
+           =-18.75 not applicable as data cannot be negative.
+
+Upper bound=Q3+1.5*IQR
+           =25+1.5*17.5
+           =51.25  Since 50 is below upper limit, so no outlier 
+
+10.Explain with real example where central tendency and measure of dispersion are used to interpret data and give example and with calculations?
+A. A Class Teacher collected exam marks of 5 students to check their maths performance
+
+student    marks
+1           70
+2           80 
+3           70
+4           75
+5           85
+central tendency
+
+mean=(70+80+70+75+85)/5
+    = 380/5 
+    =76
+
+median=70,70,75,80,85
+median=75
+
+Mode=70 is twice
+
+Measures of Dispersion
+
+Range=max-min
+     =85-70
+     =15
+
+
+
+Marks    Deviation   Sqr Deviation
+70           -6         36
+80            4         16
+70           -6         36
+75           -1          1
+85           -9         81
+
+
+Variance=(36+16+36+0+81)/5
+        =33.8
+S.D=SQRT(variance)
+   =SQRT(33.8)
+   =5.81
+
+This shows that avg student scored 76, median(75) value is very close to mean and range is 15 point which shows that highest score is 15 points higher than lower score.
+
+This shows that students performed well with variation in their scores.
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
